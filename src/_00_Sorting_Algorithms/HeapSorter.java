@@ -15,14 +15,22 @@ public class HeapSorter extends Sorter {
 	void sort(int[] array, SortingVisualizer display) {
 		//8. create an integer called n and set it equal 
 		//   to the length of the array
-		
+		int n = array.length;
+		int start = n/2;
 		//9. make a for loop that starts half way between
 		//   0 and n and counts down until it is less than 0.
 		//   Inside this for loop, call the heapSort method with n and i
-        
+        for(int i = start; i<n; i++) {
+        		heapSort(array, n, i, display);
+        }
         //10. make a for loop that starts at n-1 
         //    and counts down until it is less than 0.
-        
+        for(int i=n-1; i<n; i++) {
+        		
+        		if(i < 0) {
+        			
+        		}
+        }
         	//11. swap the array elements at 0 and i.
  
             //12. call the heapSort method with i and 0
